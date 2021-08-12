@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+:root{
+
+    --secondary-color: #f151bc;
+    
+    --shadow-color:#14011dbe;
+    --text-color:#e7e7e7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+html{
+    font-size:100%;
+     min-height:100vh;
+     width:100vw;
+}
+
+body{
+    min-height:100vh;
+    width:100vw;
+    font-family: 'Georama',
+    sans-serif;
+    box-sizing:border-box;
+
+   background: linear-gradient(90deg, #020024 0%, #06065e 35%, #0273a0 100%);
+  
+}
+
+.hero{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    font-family:'PT Sans',
+    sans-serif;
+    color:var(--text-color);
+    letter-spacing: .1rem;
+}
+
+.container{
+    margin-right:16rem;
+    width:50rem;
+    display:flex;
+    flex-direction:column;
+}
+
+.container__title{
+    font-size:7rem;
+    font-weight:600;
+    margin:4rem 0;
+    text-shadow: 10px 10px 1px var(--shadow-color);
+    line-height: 6.8rem;
+}
+
+.container__title span{
+    color:var(--secondary-color);
+}
+
+.container__paragraph{
+    font-size:3rem;
+}
+
+.container__button{
+    align-self: flex-end;
+    margin-top:4rem;
+    border:none;
+    padding:2rem 4rem;
+    background-color:var(--secondary-color);
+    color:white;
+    border-radius:5px;
+    box-shadow:5px 5px 5px var(--shadow-color);
+    font-size:2rem;
+    cursor:pointer;
+}
+
